@@ -1,0 +1,13 @@
+@import 'variables';
+@import './components/app';
+
+html,
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Helvetica Neue;
+  font-size: 14px;
+}

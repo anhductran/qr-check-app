@@ -1,0 +1,102 @@
+.home-container {
+  max-width: $breakpoint_ultra_desktop_max;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+
+  .ant-layout-header {
+    height: 64px;
+    background: $color_downriver;
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-size: 26px;
+      color: $color_white;
+      margin-right: 86px;
+    }
+
+    .ant-input-group-wrapper {
+      flex: 1;
+
+      .ant-input-affix-wrapper {
+        padding: 0 0 0 25px;
+        height: 40px;
+        border-radius: 0px 10px 10px 0px;
+        overflow: hidden;
+        border: unset;
+
+        .ant-input-suffix {
+          display: flex;
+          width: 100px;
+          justify-content: center;
+          gap: 9px;
+          background: $color_yellow_orange;
+          cursor: pointer;
+        }
+      }
+
+      .ant-input-group-addon {
+        background: $color_yellow_orange;
+        border-radius: 10px 0px 0px 10px;
+        overflow: hidden;
+        border: unset;
+
+        .ant-select-selector {
+          width: 100px;
+          border: unset !important;
+        }
+      }
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 11px;
+      margin-left: 50px;
+
+      button {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: unset;
+      }
+
+      button:nth-child(1) {
+        background: $color_san_juan;
+        border-radius: 22px;
+        max-width: 94px;
+        letter-spacing: 0.02em;
+        color: $color_white;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        gap: 11px;
+        padding: 8 17px;
+      }
+
+      button:nth-child(2) {
+        background: $color_yellow_orange;
+        border-radius: 22px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $color_mine_shaft;
+        padding: 11px;
+        min-width: 104px;
+      }
+    }
+  }
+
+  .ant-layout-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
+}

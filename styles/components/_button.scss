@@ -1,0 +1,18 @@
+.button {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    background: #b5b5b5;
+    color: #fcfcfd;
+    border: none;
+
+    svg {
+      path {
+        fill: $color_white;
+      }
+    }
+  }
+}
